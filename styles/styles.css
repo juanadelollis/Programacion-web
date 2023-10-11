@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:wght@300&family=Roboto:ital,wght@0,100;0,500;0,700;1,100;1,500&family=VT323&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    }
+    
+
+/**Header **/
+.nav-bar{
+    display: none;
+}
+
+.principal-header{
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #DDBEA9;
+}
+
+.div-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.div-logo img{
+    width: 40%;
+}
+
+.menu-icon{
+    align-self: center;
+}
+/**MAIN SECTION **/
+.heroe{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation: heroe 30s infinite;
+}
+
+@keyframes heroe{
+    0%, 30% {
+        background-image: url(../images/SARA.jpg);
+    }
+    35%, 65% {
+        background-image: url(../images/SARA1071.jpg);
+    }
+    70%, 100% {
+        background-image: url(../images/banner2.jpg);
+    }
+}
+
+.event-button{
+    background-color: #B7B7A4;
+    color: white;
+    padding: 3% 2%;
+    margin: 2%;
+    align-self: center;
+}
+.h2-heroe, .h3-heroe{
+    color: white;
+    margin: 2% 2%;
+    padding: 1%;
+    background-color: #B7B7A4;
+    align-self: center;
+}
+
+.heroe-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 350px;
+}
+
+.info-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+
+.h2-info{
+    color: #6B705C;
+    font-size: 50px;
+    text-align: center;
+}
+
+.h2-info span{
+    color: #F5E1DA;
+    padding: 25%;
+}
+
+.p-info{
+    color: #6B705C;
+    padding: 3%;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+/** cards **/
+
+.events-div{
+    background-color: #F5E1DA;
+    padding-bottom: 10%;
+}
+.cards-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F5E1DA;
+} 
+
+.h2-events{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8%;
+    color: #CB997E;
+    font-size: 40px;
+
+}
+
+.card{
+    width: 80%;
+    height: 350px;
+    padding: 10%;
+}
+
+.card p{
+    background-color:#A5A58D;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4%;
+    
+}
+.card-1{
+    background-image: url(../images/card-bodas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    
+}
+
+.card-2{
+    background-image: url(../images/card-bapcom.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+.card-3{
+    background-image: url(../images/card-15.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+.card-4{
+    background-image: url(../images/card-cumple.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+    
+
+/**forms **/
+.main-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 0;
+}
+.main-form> * {
+    padding: 2% 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+.main-form h1{
+    font-size: 3em;
+    color:#A5A58D;
+}
+
+.h1-contact span{
+    color: #CB997E;
+}
+
+fieldset{
+    padding: 5%;
+    border-width: 0px;
+}
+
+.form-section {
+    padding: 2rem;
+    background-color:white;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    /* margin: 8rem 1rem; */
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 0.5rem;
+    /* font-weight: bold; */
+    color:#6B705C;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form input[type="datetime"],
+.contact-form select,
+.contact-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+.div-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.send-btn{
+    align-items: center;
+    background-color: #B7B7A4;
+    color: white;
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    margin: 1%;
+    border: 0;
+    border-radius: 50px;
+    align-self: center;
+    margin-bottom: 30%;
+}
+
+
+/* 
+.h1-contact{
+    text-align: center;
+    color:#A5A58D;
+    font-size: 8vw;
+    margin-top: 10%;
+    padding: 2%;
+    
+}
+
+.h1-contact span{
+    color: #CB997E;
+}
+
+.form-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    color: #A5A58D;
+    gap: 3%;
+
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form p{
+    align-content: center;
+}
+.send-btn{
+    background-color: #B7B7A4;
+    color: white;
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    margin: 1%;
+    border: 0;
+    align-self: center;
+    margin-bottom: 30%;
+} */
+
+
+/**FOOTER **/
+
+.footer{
+    background-color:#DDBEA9;
+    display: flex;
+    flex-direction: column;
+    padding: 1% 0%;
+}
+
+.top-footer{
+    text-align: center;
+}
+
+.logo-div-footer img{
+    width: 40%;
+} 
+
+.bottom-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* ver porque se agranda la pantalla cuando uso space between, quiero que quede asi */
+    padding: 1% 0%;
+    text-align: center;
+} 
+
+.contacto-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2%;
+    gap: 15%;
+} 
+.contacto-div img{
+    width: 20px;
+    height: 20px;
+}
+
+.copyright{
+    flex-direction: column;
+    font-size:  50%;;
+    color: white;
+    padding: 2%;
+}
+
+
+@media (min-width: 769px){
+    /** HEADER**/
+    .top-header,.nav-bar{
+        display: inline-block;
+    }
+
+    .menu-icon{
+        display: none;
+    }
+    
+    .principal-header{
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0% 3%;
+        
+    }
+
+    .div-logo{
+        width: 40%;
+    }
+    .ul-nav{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: flex-start;
+        width: 80%;
+        gap: 15%;
+    } 
+
+    a{
+        color: #6B705C;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    a:hover{
+        color:white;
+    }
+
+/**MAIN SECTION **/
+    .h2-heroe{
+        align-self: center;
+        padding: 1% 5%;
+        margin: 1%;
+    }
+    .event-button{
+        padding: 1%;
+        margin: 1%;
+    }
+    .h3-heroe{
+        margin: 1%;
+    }
+
+/* Cards */
+
+    .h2-events{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 4%;
+    }
+    .cards-div{
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    .card{
+        padding: 0%;
+        width: 20%;
+
+    }
+
+    .card p{
+        padding: 4%;
+        
+    }
+    .card-1 .card-2 .card-3 .card-4{
+        height: 500px;
+    }
+    
+    /**forms **/
+    .h1-contact{
+        text-align: center;
+        color:#A5A58D;
+        font-size: 50px;
+
+    }
+
+    .h1-contact span{
+        color:#CB997E;
+    }
+
+    .form-section{
+        padding: 3%;
+        color:#6B705C;
+        gap: 3%;
+    }
+    
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+/** FOOTER**/
+    .logo-div-footer{
+        padding: 1%;
+        width: 60%;
+        text-align: end;
+    
+    } 
+    .contacto-div img{
+        width: 25px;
+        height: 25px;
+    }
+    .copyright{
+        font-size: 12px;        
+        padding: 1%;
+    }
+}

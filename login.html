@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <!--vuejs component-->
+    <div class="container">
+        <div id="userApp" class="col-sm-8 col-sm-offset-2">
+            <h1>{{nameApp}}</h1>
+            
+            <form v-on:submit="buscarUsuario">
+                <label for="name">Nombre Usuario</label>
+                <input type="text" id="name" v-model="usuarioIngresado.usuario" class="form-control">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" v-model="usuarioIngresado.contrasena" class="form-control">
+                <input type="submit" value="Iniciar sesion" class="btn btn-block btn-success">
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        let userApp = Vue.createApp({
+            data: function(){
+                return {
+                    nameApp: 'Log In',
+                    usuarioIngresado:{
+                        usuario: "",
+                        contrasena: ""
+                    },
+                    usuarios: [
+                        {
+                            nombre: 'juana',
+                            contrasena: "1234"
+                        },
+                        {
+                            nombre: 'tomas',
+                            contrasena: "45657"
+                        }
+                    ]
+                }
+            },
+            methods: { //creamos un objetos con funciones (métodos)
+                buscarUsuario: function(e){
+                    e.preventDefault();
+                    console.log(this.usuarioIngresado.usuario);
+                    console.log(this.usuarioIngresado.contrasena);
+                    this.usuarios.forEach(usuario => {
+                        console.log(usuario);
+                        if(this.usuarioIngresado.usuario == usuario.nombre && this.usuarioIngresado.contrasena == usuario.contrasena){
+                            console.log("Acceso concedido")
+                        }
+                    }); 
+                },  
+            }
+        })
+        userApp.mount('#userApp') //para montar la aplicación y poder manipular el dom
+    </script>
+</body>
+</html>
