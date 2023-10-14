@@ -104,7 +104,7 @@
 }
 
 .h2-info span{
-    color:#F5F2DA;
+    color: #CB997E;
     
 }
 
@@ -123,8 +123,8 @@ hr {
 
 .events-div{
     /* background-color: #F5E1DA; */
-    /* background-color: #F5F2DA; puede ser*/
-    background-color: #F3F5E2;
+    background-color: #F5F2DA; 
+    /* background-color: #F3F5E2; */
     padding-bottom: 10%;
     padding-top: 1%;
 }
@@ -160,8 +160,9 @@ hr {
 }
 
 .card p{
-    background-color:#BFB8AA;
-    color: white;
+    /* background-color:#BFB8AA; */
+    background-color: #E6E3CC;
+    color: #6B705C;
     font-size: 20px;
     display: flex;
     flex-direction: row;
@@ -202,6 +203,25 @@ hr {
     
 
 /**forms **/
+.form-section{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    /* padding: 2rem; */
+    /* margin: 1rem 1rem; */
+}
+.form-img{
+    background-image: url(../images/mesa.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    
+}
 .main-form{
     display: flex;
     flex-direction: column;
@@ -211,12 +231,16 @@ hr {
 }
 .main-form> * {
     padding: 2% 0;
-    text-align: center;
-    font-size: 1.5em;
+    /* text-align: center; */
+    font-size: 0.9rem; 
+    color:#6B705C;
+
 }
 .main-form h1{
-    font-size: 3em;
+    font-size: 2.5em;
     color:#A5A58D;
+    text-align: center;
+    padding-top: 8%;
 }
 
 .h1-contact span{
@@ -226,14 +250,6 @@ hr {
 fieldset{
     padding: 5%;
     border-width: 0px;
-}
-
-.form-section {
-    padding: 2rem;
-    background-color:white;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
-    /* margin: 8rem 1rem; */
 }
 
 .contact-form {
@@ -256,9 +272,10 @@ fieldset{
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form input[type="tel"],
-.contact-form input[type="datetime"],
+.contact-form input[type="date"],
 .contact-form select,
 .contact-form textarea {
+    color: #6B705C;
     padding: 0.5rem;
     border: 1px solid #ddd;
     border-radius: 0.5rem;
@@ -471,9 +488,17 @@ fieldset{
     }
 
     .form-section{
-        padding: 3%;
+        /* padding: 3%; */
+        flex-direction: row;
         color:#6B705C;
         gap: 3%;
+    }
+
+    .form-img{
+        height: 1000px;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
     }
     
     .contact-form{
