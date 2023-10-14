@@ -19,7 +19,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #DDBEA9;
+    /* background-color: #DDBEA9; */
+    background-color: #F5F2DA;
 }
 
 .div-logo{
@@ -34,6 +35,7 @@
 
 .menu-icon{
     align-self: center;
+    margin: 3%;
 }
 /**MAIN SECTION **/
 .heroe{
@@ -125,7 +127,7 @@ hr {
     /* background-color: #F5E1DA; */
     background-color: #F5F2DA; 
     /* background-color: #F3F5E2; */
-    padding-bottom: 10%;
+    padding-bottom: 20%;
     padding-top: 1%;
 }
 .cards-div{
@@ -154,7 +156,7 @@ hr {
 
 .card{
     width: 80%;
-    height: 350px;
+    height: 250px;
     padding: 10%;
 
 }
@@ -170,35 +172,42 @@ hr {
     padding: 4%;
     
 }
-.card-1{
-    background-image: url(../images/card-bodas.jpg);
+
+.main-card{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 350px;
+    height: 250px;
+}
+.card-1{
+    background-image: url(../images/card-bodas.jpg);
+    /* background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px; */
     
 }
 
 .card-2{
     background-image: url(../images/card-bapcom.jpg);
-    background-position: center center;
+    /* background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 350px;
+    height: 350px; */
 }
 .card-3{
     background-image: url(../images/card-15.png);
-    background-position: center center;
+    /* background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 350px;
+    height: 350px; */
 }
 .card-4{
     background-image: url(../images/card-cumple.jpg);
-    background-position: center center;
+    /* background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 350px;
+    height: 350px; */
 }
     
 
@@ -290,70 +299,24 @@ fieldset{
 }
 .send-btn{
     align-items: center;
-    background-color: #B7B7A4;
-    color: white;
+    background-color: #B7B7A4; 
+    /* background-color: #E6E3CC; */
+    color: #6B705C;
     font-size: 20px;
     width: 120px;
     height: 40px;
     margin: 1%;
     border: 0;
-    border-radius: 50px;
+    border-radius: 10px;
     align-self: center;
-    margin-bottom: 30%;
+    margin-bottom: 10%;
 }
-
-
-/* 
-.h1-contact{
-    text-align: center;
-    color:#A5A58D;
-    font-size: 8vw;
-    margin-top: 10%;
-    padding: 2%;
-    
-}
-
-.h1-contact span{
-    color: #CB997E;
-}
-
-.form-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 3%;
-    color: #A5A58D;
-    gap: 3%;
-
-}
-
-.contact-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-form p{
-    align-content: center;
-}
-.send-btn{
-    background-color: #B7B7A4;
-    color: white;
-    font-size: 20px;
-    width: 120px;
-    height: 40px;
-    margin: 1%;
-    border: 0;
-    align-self: center;
-    margin-bottom: 30%;
-} */
-
 
 /**FOOTER **/
 
 .footer{
-    background-color:#DDBEA9;
+    /* background-color:#DDBEA9; */
+    background-color: #F5F2DA;
     display: flex;
     flex-direction: column;
     padding: 1% 0%;
@@ -364,7 +327,7 @@ fieldset{
 }
 
 .logo-div-footer img{
-    width: 40%;
+    width: 60%;
 } 
 
 .bottom-footer{
@@ -379,18 +342,19 @@ fieldset{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    list-style: none;
     padding: 2%;
-    gap: 15%;
+    gap: 10%;
 } 
 .contacto-div img{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }
 
 .copyright{
     flex-direction: column;
     font-size:  50%;;
-    color: white;
+    color: #6B705C;
     padding: 2%;
 }
 
@@ -509,18 +473,48 @@ fieldset{
     
 
 /** FOOTER**/
+    .top-footer{
+        text-align: center;
+    }
+
+    .logo-div-footer img{
+        width: 40%;
+    } 
+
+    .bottom-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; /* ver porque se agranda la pantalla cuando uso space between, quiero que quede asi */
+        padding: 1% 0%;
+        text-align: center;
+    } 
+
+    .contacto-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        padding: 2%;
+        gap: 15%;
+    } 
+
+    .copyright{
+        flex-direction: column;
+        font-size:  50%;;
+        color: white;
+        padding: 2%;
+    }
+
+
     .logo-div-footer{
         padding: 1%;
         width: 60%;
         text-align: end;
-    
+        
     } 
     .contacto-div img{
         width: 25px;
         height: 25px;
     }
-    .copyright{
-        font-size: 12px;        
-        padding: 1%;
-    }
+    
 }
