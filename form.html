@@ -4,125 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="styles/styleform.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+  <div id="app">
     <header>
         <!-- main header -->
         <div class="principal-header">
-            <div class="div-logo">
-              <img src="images/logo.png" alt="logo" />
-            </div>
-            <nav class="nav-bar">
-              <ul class="ul-nav">
-                <li>
-                  <a href="#">Inicio</a>
-                </li>
-                <li>
-                  <a href="#">Nosotros</a>
-                </li>
-                <li>
-                  <a href="#">Eventos</a>
-                </li>
-                <li>
-                  <a href="#">Blog</a>
-                </li>
-                <li>
-                  <a href="#">Contactanos</a>
-                </li>
-              </ul>
-            </nav>
-            <svg
-              class="menu-icon"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0.714286 5.15625H19.2857C19.6802 5.15625 20 4.87645 20 4.53125V2.96875C20 2.62355 19.6802 2.34375 19.2857 2.34375H0.714286C0.319777 2.34375 0 2.62355 0 2.96875V4.53125C0 4.87645 0.319777 5.15625 0.714286 5.15625ZM0.714286 11.4062H19.2857C19.6802 11.4062 20 11.1264 20 10.7812V9.21875C20 8.87355 19.6802 8.59375 19.2857 8.59375H0.714286C0.319777 8.59375 0 8.87355 0 9.21875V10.7812C0 11.1264 0.319777 11.4062 0.714286 11.4062ZM0.714286 17.6562H19.2857C19.6802 17.6562 20 17.3764 20 17.0312V15.4688C20 15.1236 19.6802 14.8438 19.2857 14.8438H0.714286C0.319777 14.8438 0 15.1236 0 15.4688V17.0312C0 17.3764 0.319777 17.6562 0.714286 17.6562Z"
-                fill="white"
-              />
-            </svg>
+          <div class="div-logo">
+            <img src="images/logo.png" alt="logo" />
           </div>
-    </header>
-    <main>
+          <nav v-show="showNav" v-on:click="toggleNav" class="nav-bar" id="nav">
+            <ul class="ul-nav">
+              <li>
+                <a href="index.html">Inicio</a>
+              </li>
+              <li>
+                <a href="#">Nosotros</a>
+              </li>
+              <li>
+                <a href="#">Eventos</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="form.html">Contactanos</a>
+              </li>
+            </ul>
+          </nav>
+          <svg v-show="showMenuButton" v-on:click="toggleNav"
+            id="menu"
+            class="menu-icon"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.714286 5.15625H19.2857C19.6802 5.15625 20 4.87645 20 4.53125V2.96875C20 2.62355 19.6802 2.34375 19.2857 2.34375H0.714286C0.319777 2.34375 0 2.62355 0 2.96875V4.53125C0 4.87645 0.319777 5.15625 0.714286 5.15625ZM0.714286 11.4062H19.2857C19.6802 11.4062 20 11.1264 20 10.7812V9.21875C20 8.87355 19.6802 8.59375 19.2857 8.59375H0.714286C0.319777 8.59375 0 8.87355 0 9.21875V10.7812C0 11.1264 0.319777 11.4062 0.714286 11.4062ZM0.714286 17.6562H19.2857C19.6802 17.6562 20 17.3764 20 17.0312V15.4688C20 15.1236 19.6802 14.8438 19.2857 14.8438H0.714286C0.319777 14.8438 0 15.1236 0 15.4688V17.0312C0 17.3764 0.319777 17.6562 0.714286 17.6562Z"
+              fill="gray"/>
+          </svg>
+          <svg v-show="showCloseButton" v-on:click="toggleNav"  class="close" id="close" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path fill="gray" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+        </div>
+      </header>
+      <main>
         <section class="heroe">
-            <div class="heroe-div">
-              <h2 class="h2-heroe">CONTACTO</h2>
-              <h3 class="h3-heroe">¡Creamos tu evento soñado!</h3>
-            </div>
-        </section>
-        <section class="form-section">
-          <div class="main-form">
-            <h1 class="h1-contact">Contacte con <span>nosotros</span></h1>
+          <div class="heroe-div">
+            <h2 class="h2-heroe">Soledad Jañez Eventos</h2>
+            <h3 class="h3-heroe">¡Creamos tu evento soñado!</h3>
           </div>
-          <div>
-              <form  id="form" action= "mailto:msjanez@hotmail.com "  method="post" class="contact-form">
-                <fieldset>
-                  <div class="form-group">
-                    <label for="fullname">Nombre y Apellido</label>
-                    <input type="text" name="fullname" id="fullname" placeholder="Nombre y apellido"/>
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Correo electronico</label>
-                    <input type="email" name="email" id="email"/>
-                  </div>
-                  <div class="form-group">
-                    <label for="telephone">Celular</label>
-                      <input type="tel" name="telephone" id="telephone" placeholder="Teléfono"/>
-                  </div>
-                  <div class="form-group">
-                      <label for="date"> Fecha estimada del Evento</label>
-                      <input type="datetime" name="date" id="date"/>
-                  </div>
-                  <div class="form-group">
-                    <label for="guest-count">Cantidad de invitados</label>
-                    <input type="text" name="guest-count" id="guest-count"/>
-                </div>
-                  <div class="form-group">
-                    <label for="eventType">Como podemos ayudarte? *Tipo de evento</label>
-                    <select name="eventType" id="eventType" required>
-                      <option value="">Seleccione una opcion</option>
-                      <option value="wed">Boda</option>
-                      <option value="15">Cumpleaños de 15</option>
-                      <option value="Birth">Cumpleaños</option>
-                      <option value="Bap/Com">Comunion/Bautismo</option>
-                      <option value="Other">Otro</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="message">Contanos cual es tu idea</label>
-                    <textarea name="message" id="message" cols="30" rows="10" maxlength="5000" placeholder="Escriba aqui"></textarea>
-                  </div>
-                </fieldset> 
-                <div class="div-btn">
-                  <button type="submit" class="send-btn">Enviar</button>
-                </div>
-                
-              </form>
-            </div>
         </section>
-    </main>
-    <footer class="footer">
-      <div class="top-footer">
-        <div class="logo-div-footer"><img src="images/logo.png" alt="logo"></div>
-      </div>
-      <div class="bottom-footer">
-        <div class="copyright">
-          <p>@2023 Soledad Jañez</p>
-          <p>Todos los derechos reservados</p>
+          <section class="form-section">
+            <!-- <div class="form-img"></div> -->
+            <div class="main-form">
+                <h1 class="h1-contact">Contacte con <span>nosotros</span></h1>
+                <form class="contact-form" id="form" action= "mailto:msjanez@hotmail.com "  method="post" >
+                  <fieldset>
+                    <div class="form-group">
+                      <label for="fullname">Nombre y Apellido</label>
+                      <input type="text" name="fullname" id="fullname" />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Correo electronico</label>
+                      <input type="email" name="email" id="email"/>
+                    </div>
+                    <div class="form-group">
+                      <label for="telephone">Celular</label>
+                        <input type="tel" name="telephone" id="telephone" />
+                    </div>
+                    <div class="form-group">
+                        <label for="date"> Fecha estimada del Evento</label>
+                        <input type="date" name="date" id="date"/>
+                    </div>
+                    <div class="form-group">
+                      <label for="guest-count">Cantidad de invitados</label>
+                      <input type="text" name="guest-count" id="guest-count"/>
+                  </div>
+                    <div class="form-group">
+                      <label for="eventType">Como podemos ayudarte? *Tipo de evento</label>
+                      <select name="event-type" id="event-type" required>
+                        <option value="">Seleccione una opcion</option>
+                        <option value="wed">Boda</option>
+                        <option value="15">Cumpleaños de 15</option>
+                        <option value="Birth">Cumpleaños</option>
+                        <option value="Bap/Com">Comunion/Bautismo</option>
+                        <option value="Other">Otro</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Contanos cual es tu idea</label>
+                      <textarea name="message" id="message" cols="30" rows="10" maxlength="5000" placeholder="Escriba aqui"></textarea>
+                    </div>
+                  </fieldset> 
+                  <div class="div-btn">
+                    <button type="submit" class="send-btn">Enviar</button>
+                  </div>
+                  
+                </form>
+              </div>
+          </section>
+      </main>
+      <footer class="footer">
+        <div class="top-footer">
+          <div class="logo-div-footer"><img src="images/logo.png" alt="logo"></div>
         </div>
-        <div class="contacto-div">
-          <a class="contacto-wap" href="https://api.whatsapp.com/send/?phone=5491169044544&text&type=phone_number&app_absent=0"><img src="images/wap-logo.png" alt=""></a>
-          <a class="contacto-mail" href="mailto:msjanez@hotmail.com"><img  src="images/mail-logo.png" alt=""></a>
-          <a class="contacto-tel" href="tel:914287888"><img  src="images/tel-logo.png" alt=""></a>
-          <a class="contacto-insta" href="https://www.instagram.com/ucema_edu/"><img  src="images/insta-logo.png" alt=""></a>
-          <a class="contacto-pint" href="https://www.pinterest.es/boutiqwedding/"> <img src="images/pint-logo.png" alt=""></i></a>
+        <div class="bottom-footer">
+          <div class="copyright">
+            <p>@2023 Soledad Jañez</p>
+            <p>Todos los derechos reservados</p>
+          </div>
+          <ul class="contacto-div">
+            <li>
+              <a class="contacto-wap" href="https://api.whatsapp.com/send/?phone=5491169044544&text&type=phone_number&app_absent=0"><img src="images/whatsapp icon icon.png" alt="whatsapp"></a>
+            </li>
+            <li>
+              <a class="contacto-mail" href="mailto:msjanez@hotmail.com"><img  src="images/gmail icon icon.png" alt="mail"></a>
+            </li>
+            <li>
+              <a class="contacto-tel" href="tel:914287888"><img  src="images/pngfind.com-telephone-icon-png-2388681.png" alt="telephone"></a>
+            </li>
+            <li>
+              <a class="contacto-insta" href="https://www.instagram.com/ucema_edu/"><img  src="images/instagram icon icon.png" alt="instagram"></a>
+            </li>
+            <li>
+              <a class="contacto-pint" href="https://www.pinterest.es/boutiqwedding/"> <img src="images/pinterest icon icon.png" alt="pinterest"></i></a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </footer>
-    <script src="scripts/form.js"></script>
+      </footer>
+  </div>
 </body>
 </html>

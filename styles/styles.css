@@ -59,12 +59,16 @@
 }
 
 .event-button{
-    background-color: #B7B7A4;
+    /* background-color: #B7B7A4; */
     color: white;
     padding: 3% 4%;
     margin: 5%;
     align-self: center;
-    border-radius: 15px;
+    border: 2px white solid ;
+    border-radius: 10px;
+    border-color: white;
+    text-decoration: none;
+    
 }
 .h2-heroe{
     font-size: 40px;
@@ -270,6 +274,7 @@ fieldset{
     margin-bottom: 1.3rem;
     display: flex;
     flex-direction: column;
+
 }
 
 .contact-form label {
@@ -299,14 +304,16 @@ fieldset{
 }
 .send-btn{
     align-items: center;
-    background-color: #B7B7A4; 
+    /* background-color: #B7B7A4;  */
     /* background-color: #E6E3CC; */
+    background-color: white;
     color: #6B705C;
     font-size: 20px;
     width: 120px;
     height: 40px;
     margin: 1%;
-    border: 0;
+    border: 2px solid;
+    border-color: #6B705C;
     border-radius: 10px;
     align-self: center;
     margin-bottom: 10%;
@@ -461,7 +468,8 @@ fieldset{
         /* padding: 3%; */
         flex-direction: row;
         color:#6B705C;
-        gap: 5%;
+        gap: 5%;  
+    
     }
 
     .form-img{
@@ -471,20 +479,17 @@ fieldset{
 
     .main-form{
         align-items: center;
+        justify-content: center;
     }
 
     .h1-contact{
-    
         font-size: 3.5rem;
-
     }
     
-    /* .contact-form{
-        display: flex;
-        flex-direction: column;
+    .contact-form{
         align-items: center;
         justify-content: center;
-    }  */
+    }  
 
     .contact-form label {
         font-size: 1.2rem;
