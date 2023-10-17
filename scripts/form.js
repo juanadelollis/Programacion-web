@@ -8,7 +8,7 @@ form.addEventListener('submit', function(event){
     const email = document.getElementById('email').value.trim();
     const telephone = document.getElementById('telephone').value.trim();
     const date = document.getElementById('date').value.trim();
-    const eventType = document.getElementById('eventType').value;
+    const eventType = document.getElementById('event-type').value;
     const message = document.getElementById('message').value.trim();
 
     //Validaciones
@@ -27,9 +27,6 @@ form.addEventListener('submit', function(event){
         return
     }
     
-   // const startDate = document.getElementById('start-date').value;
-
-
     // Mostrar resultados en la consola 
     console.log("Nombre y Apellido:", fullname);
     console.log("Email:", email);
@@ -37,8 +34,6 @@ form.addEventListener('submit', function(event){
     console.log("Fecha:", date);
     console.log("Tipo de Evento:", eventType);
     console.log("Comentarios:", message);
-
-    // console.log("Fecha del evento:", startDate);
 
 
     const cliente = {
@@ -48,7 +43,6 @@ form.addEventListener('submit', function(event){
         date: date,
         eventType: eventType,
         message: message,
-       // startDate: startDate,
     }
     console.log("cliente", cliente)
 

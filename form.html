@@ -59,7 +59,7 @@
             <!-- <div class="form-img"></div> -->
             <div class="main-form">
                 <h1 class="h1-contact">Contacte con <span>nosotros</span></h1>
-                <form class="contact-form" id="form" action= "mailto:msjanez@hotmail.com "  method="post" >
+                <form class="contact-form" id="form"   method="post" > 
                   <fieldset>
                     <div class="form-group">
                       <label for="fullname">Nombre y Apellido</label>
@@ -82,7 +82,7 @@
                       <input type="text" name="guest-count" id="guest-count"/>
                   </div>
                     <div class="form-group">
-                      <label for="eventType">Como podemos ayudarte? *Tipo de evento</label>
+                      <label for="event-type">Como podemos ayudarte? *Tipo de evento</label>
                       <select name="event-type" id="event-type" required>
                         <option value="">Seleccione una opcion</option>
                         <option value="wed">Boda</option>
@@ -135,4 +135,6 @@
       </footer>
   </div>
 </body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="scripts/form.js"></script>
 </html>

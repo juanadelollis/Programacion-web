@@ -37,6 +37,11 @@
     align-self: center;
     margin: 3%;
 }
+
+.ul-search{
+    display: none;
+    list-style: none;
+}
 /**MAIN SECTION **/
 .heroe{
     background-position: center center;
@@ -367,10 +372,10 @@ fieldset{
 
 @media (min-width: 769px){
     /** HEADER**/
-    .top-header,.nav-bar{
+    .top-header,.nav-bar, .ul-search{
         display: inline-block;
     }
-
+    
     .menu-icon{
         display: none;
     }
