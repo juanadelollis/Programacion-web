@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soledad Jañez Eventos</title>
+    <title>Nosotros</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -18,10 +18,10 @@
           <nav v-show="showNav" v-on:click="toggleNav" class="nav-bar" id="nav">
             <ul class="ul-nav">
               <li>
-                <a href="nosotros.html">Nosotros</a>
+                <a href="#">Nosotros</a>
               </li>
               <li>
-                <a href="eventos.html">Eventos</a>
+                <a href="#">Eventos</a>
               </li>
               <li>
                 <a href="#">Blog</a>
@@ -63,90 +63,24 @@
         </div>
       </header>
       <main>
-        <section class="heroe">
+        <section class="heroe-nosotros">
           <div class="heroe-div">
-            <h2 class="h2-heroe">Soledad Jañez Eventos</h2>
-            <h3 class="h3-heroe">¡Creamos tu evento soñado!</h3>
-            <a href="form.html" class="event-button">Consultar</a>
+            <h2 class="h2-nosotros">NOSOTROS</h2>
           </div>
         </section>
-        <section class="info">
-          <div class="info-div">
-            <h2 class="h2-info">Convertimos tus sueños en experiencias <span>únicas e inolvidables</span></h2>
-            <p class="p-info">Estamos ansiosos por acompañarte en tu momento único!</p>
-            <hr>
+        <section class="info-nosotros">
+          <div class="info-h2">
+            <h2>We Plan, You Party</h2>
           </div>
+          <div class="info-p">
+            <p>Creamos eventos cuidadosamente planificados y producidos que, cuando se realizan con intención, van más allá de un diseño estéticamente hermoso para convertirse en una experiencia definitiva para los invitados. Con la visión de nuestros clientes como nuestro enfoque principal y nuestra atención al detalle, nuestros servicios están diseñados para aquellos clientes que comprenden el arte de la hospitalidad. Nuestro servicio, al igual que nuestros eventos, se aborda con intención, y nos enorgullece crear un proceso de planificación personal, tan íntimo como los eventos que estamos organizando.</p>
+          </div>
+          <div class="info-div1"></div>
+          <div class="info-div2"></div>
         </section>
-        <section>
-          <div class="events-div">
-            <h2 class="h2-events">Eventos Destacados</h2>
-            <div class="cards-div">
-              <div class="card">
-                <div class="main-card card-1"></div>
-                <p class="event-name">Bodas</p>
-              </div>
-              <div class="card">
-                <div class="main-card card-2"></div>
-                <p class="event-name">Bautismos y Comuniones</p>
-              </div>
-              <div class="card">
-                <div class="main-card card-3"></div>
-                <p class="event-name">Fiestas de 15</p>
-              </div>
-              <div class="card">
-                <div class="main-card card-4"></div>
-                <p class="event-name">Cumpleaños</p>
-              </div>
-            </div>
-          </div>
-          <section class="form-section">
-            <div class="form-img"></div>
-            <div class="main-form">
-                <h1 class="h1-contact">Contacte con <span>nosotros</span></h1>
-                <form class="contact-form" id="form" action= "mailto:msjanez@hotmail.com "  method="post" >
-                  <fieldset>
-                    <div class="form-group">
-                      <label for="fullname">Nombre y Apellido</label>
-                      <input type="text" name="fullname" id="fullname" />
-                    </div>
-                    <div class="form-group">
-                      <label for="email">Correo electronico</label>
-                      <input type="email" name="email" id="email"/>
-                    </div>
-                    <div class="form-group">
-                      <label for="telephone">Celular</label>
-                        <input type="tel" name="telephone" id="telephone" />
-                    </div>
-                    <div class="form-group">
-                        <label for="date"> Fecha estimada del Evento</label>
-                        <input type="date" name="date" id="date"/>
-                    </div>
-                    <div class="form-group">
-                      <label for="guest-count">Cantidad de invitados</label>
-                      <input type="text" name="guest-count" id="guest-count"/>
-                  </div>
-                    <div class="form-group">
-                      <label for="eventType">Como podemos ayudarte? *Tipo de evento</label>
-                      <select name="event-type" id="event-type" required>
-                        <option value="">Seleccione una opcion</option>
-                        <option value="wed">Boda</option>
-                        <option value="15">Cumpleaños de 15</option>
-                        <option value="Birth">Cumpleaños</option>
-                        <option value="Bap/Com">Comunion/Bautismo</option>
-                        <option value="Other">Otro</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="message">Contanos cual es tu idea</label>
-                      <textarea name="message" id="message" cols="30" rows="10" maxlength="5000" placeholder="Escriba aqui"></textarea>
-                    </div>
-                  </fieldset> 
-                  <div class="div-btn">
-                    <button type="submit" class="send-btn">Enviar</button>
-                  </div>
-                  
-                </form>
-              </div>
+        <section class="contact">
+            <h2>Listo para planear tu proximo gran evento?</h2>
+            <a href="form.html" class="contact-button">Consultar</a>
           </section>
       </main>
       <footer class="footer">

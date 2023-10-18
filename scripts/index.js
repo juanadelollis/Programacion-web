@@ -18,6 +18,8 @@ let app = Vue.createApp({
 });
 app.mount("#app")
 
+
+
 // FORMULARIO
 const form = document.getElementById('form');   //* capturamos el form*//
 

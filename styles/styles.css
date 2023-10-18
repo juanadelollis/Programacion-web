@@ -18,7 +18,7 @@
     padding: 3%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     /* background-color: #DDBEA9; */
     background-color: #F5F2DA;
 }
@@ -100,9 +100,155 @@
 .heroe-div{
     display: flex;
     flex-direction: column;
-    
     justify-content: center;
     height: 350px;
+}
+
+.heroe-div-img{
+    width: 80%;
+}
+
+/*NOSOTROS */
+.heroe-nosotros{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/fondo2.png);
+}
+
+.h2-nosotros{
+    font-size: 40px;
+    color: white;
+    margin: 2% 2%;
+    background-color: #F5F2DA;
+    width: 400px;
+    align-self: center;
+    text-align: center;
+}
+.info-nosotros{
+    width: 85%;
+    position: relative;
+    margin: 0 auto;
+    height: 550px;
+    pointer-events: none;
+    margin-top: 3%;
+}
+.info-div1{
+    position: absolute;
+    left: 800px;
+    top: 60px;
+    width: 365px;
+    height: 398px;
+    background-color: #6B705C;
+}
+.info-h2{
+    left: 20px;
+    top: 194px;
+    width: 598px;
+    padding-top: 10%;
+    padding-bottom: 3%;
+    color: #CB997E;
+    font-size: 1.5rem;
+}
+.info-p{
+    position: absolute;
+    left: 0px;
+    top: 170px;
+    width: 600px;
+    height: 63px; 
+    font-size: 1.1rem;
+    margin-top: 3%;
+}
+.info-div2{
+    position: absolute;
+    left: 660px;
+    top: 100px;
+    width: 450px;
+    height: 450px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/mesa.png);
+}
+/*EVENTOS*/
+.heroe-eventos{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/fondo6.jpg);
+}
+
+.h2-event{
+    font-size: 40px;
+    color: white;
+    margin: 2% 2%;
+    background-color: #F5F2DA;
+    width: 400px;
+    align-self: center;
+    text-align: center;
+} 
+.contact{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact h2{
+    color: #6B705C;
+    font-size: 2.5rem;
+}
+.contact-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #B7B7A4; */
+    color: #6B705C;
+    font-size: 1.8rem;
+    width: 10%;
+    padding: 2% 2%;
+    margin: 5%;
+    border: 2px #6B705C solid ;
+    border-radius: 10px;
+    border-color: #6B705C;
+    text-decoration: none;
+}
+.contact-button:hover{
+    color: #CB997E;
+}
+/*FORM */
+.heroe-form{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/fondo4.jpg);
+}
+
+.h2-form{
+    font-size: 40px;
+    color: white;
+    margin: 2% 2%;
+    background-color: #F5F2DA;
+    width: 400px;
+    align-self: center;
+    text-align: center;
+}
+.form-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+    margin: 4%;
+}
+.h2-form-info{
+    padding-bottom: 3%;
+    color: #CB997E;
+    font-weight: bold;
+    font-size: 1.8rem;
 }
 
 /* Info*/
@@ -151,11 +297,12 @@ hr {
     flex-direction: column;
     justify-content: center;
     background-color: #F5F2DA;
+    margin-top: 5%;
 } 
 
 .h2-events{
     text-align: center;
-    margin-top: 8%;
+    /* margin-top: 8%; */
     color: #CB997E;
     font-size: 40px;
 
@@ -175,6 +322,10 @@ hr {
     height: 250px;
     padding: 10%;
 
+}
+
+.card:hover{
+    scale: 1.1;
 }
 
 .card p{
@@ -385,6 +536,7 @@ fieldset{
     .nav-bar{
         display: flex;
         flex-direction: row;
+        width: 100%;
     }
 
     .ul-search{
@@ -398,10 +550,13 @@ fieldset{
         flex-direction: row;
         list-style: none;
         align-items: center;
-        justify-content: flex-start;
-        /* width: 80%;  */
-        gap: 10%; 
+        justify-content: space-around;
+        width: 80%;  /* PONERLO EN 100 SI NO AGREGO BUSCADOR */
     }  
+
+    .ul-nav li{
+        font-size: 1.5rem;
+    }
 
     .menu-icon{
         display: none;
@@ -415,7 +570,12 @@ fieldset{
     }
 
     .div-logo{
-        width: 40%;
+        width: 30%;
+    } 
+
+    .div-logo img{
+        width: 70%;
+        padding: 3%;
     }
 
 
