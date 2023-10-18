@@ -35,7 +35,14 @@
 
 .menu-icon{
     align-self: center;
-    margin: 3%;
+    justify-content: center;
+    margin-right: 5%;
+}
+
+.close-icon{
+    align-self: center;
+    justify-content: center;
+    margin-right: 5%;
 }
 
 .ul-search{
@@ -93,7 +100,7 @@
 .heroe-div{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    
     justify-content: center;
     height: 350px;
 }
@@ -372,10 +379,30 @@ fieldset{
 
 @media (min-width: 769px){
     /** HEADER**/
-    .top-header,.nav-bar, .ul-search{
+    .top-header{ 
         display: inline-block;
     }
-    
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ul-search{
+        display: flex;
+        flex-direction: row;
+        padding-left: 70%; 
+    }
+
+    .ul-nav{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        align-items: center;
+        justify-content: flex-start;
+        /* width: 80%;  */
+        gap: 10%; 
+    }  
+
     .menu-icon{
         display: none;
     }
@@ -390,14 +417,7 @@ fieldset{
     .div-logo{
         width: 40%;
     }
-    .ul-nav{
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        justify-content: flex-start;
-        width: 80%;
-        gap: 15%;
-    } 
+
 
     a{
         color: #6B705C;
