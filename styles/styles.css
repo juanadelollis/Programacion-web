@@ -14,12 +14,31 @@
     display: none;
 }
 
+/* .menu-hamburguesa{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.ul-nav{
+    position: fixed;
+    max-width: 400px;
+    width: 100%;
+    top: 96px;
+    right: 0;
+    bottom: 0;
+    background-color: #6B705C;
+    overflow-y: auto;
+    display: grid;
+    grid-auto-rows: max-content;
+} */
+
 .principal-header{
     padding: 3%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* background-color: #DDBEA9; */
     background-color: #F5F2DA;
 }
 
@@ -37,7 +56,7 @@
     align-self: center;
     justify-content: center;
     margin-right: 5%;
-}
+} 
 
 .close-icon{
     align-self: center;
@@ -45,10 +64,7 @@
     margin-right: 5%;
 }
 
-.ul-search{
-    display: none;
-    list-style: none;
-}
+
 /**MAIN SECTION **/
 .heroe{
     background-position: center center;
@@ -126,50 +142,28 @@
     text-align: center;
 }
 .info-nosotros{
-    width: 85%;
     position: relative;
+    width: 85%;
     margin: 0 auto;
     height: 550px;
     pointer-events: none;
     margin-top: 3%;
-}
-.info-div1{
-    position: absolute;
-    left: 800px;
-    top: 60px;
-    width: 365px;
-    height: 398px;
-    background-color: #6B705C;
+    margin-bottom: 15%;
 }
 .info-h2{
-    left: 20px;
-    top: 194px;
-    width: 598px;
+    text-align: center;
     padding-top: 10%;
-    padding-bottom: 3%;
     color: #CB997E;
     font-size: 1.5rem;
 }
 .info-p{
     position: absolute;
-    left: 0px;
-    top: 170px;
-    width: 600px;
-    height: 63px; 
-    font-size: 1.1rem;
+    text-align: center; 
+    font-size: 1.2rem;
     margin-top: 3%;
+    line-height: 2rem;
 }
-.info-div2{
-    position: absolute;
-    left: 660px;
-    top: 100px;
-    width: 450px;
-    height: 450px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../images/mesa.png);
-}
+
 /*EVENTOS*/
 .heroe-eventos{
     background-position: center center;
@@ -190,24 +184,27 @@
 .contact{
     height: 50vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    background-color: #E6E3CC;
 }
 
 .contact h2{
     color: #6B705C;
-    font-size: 2.5rem;
+    text-align: center;
+    margin: 3%;
+    font-size: 1.6rem;
 }
 .contact-button{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* background-color: #B7B7A4; */
     color: #6B705C;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     width: 10%;
-    padding: 2% 2%;
+    padding: 3% 10%;
     margin: 5%;
     border: 2px #6B705C solid ;
     border-radius: 10px;
@@ -215,7 +212,7 @@
     text-decoration: none;
 }
 .contact-button:hover{
-    color: #CB997E;
+    color:#CB997E;
 }
 /*FORM */
 .heroe-form{
@@ -239,16 +236,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
     text-align: center;
     margin: 4%;
+    margin-bottom: 20%;
 }
 .h2-form-info{
-    padding-bottom: 3%;
+    padding-bottom: 8%;
     color: #CB997E;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+    padding-top: 5%;
+}
+.form-info p{
+    line-height: 1.8rem;
+    font-size: 1.2rem;
 }
 /* LOGIN MI CUENTA*/
 .form-login{
@@ -256,8 +259,8 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: center; 
-    height: 65vh;
+    padding-top: 6%; 
+    height: 80vh;
 }
 
 .login{
@@ -274,21 +277,25 @@
 .form-login input{
     width: 95%; 
     height: 2rem;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0; 
     padding: 0.5rem;
     border: 1px solid #6B705C;
     border-radius: 4px;
     background-color: white;
 }
 .form-login button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 95%;
-    height: 2rem;
+    height: 2.5rem;
     padding: 0.8rem 1.8rem;
-    background-color: #01ADEE;
+    background-color: #F5F2DA;
     border: none;
     border-radius: 4px;
+    font-size: 1rem;
     font-weight: 500;
-    margin: 1vh 1vw;
+    margin: 2vh 1vw; 
 }
     .form-login button:hover {
         scale: 1.1;
@@ -427,7 +434,7 @@ hr {
     display: flex;
     flex-direction: column;
     background-color:white;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1); */
     border-radius: 0.5rem;
     /* padding: 2rem; */
     /* margin: 1rem 1rem; */
@@ -558,7 +565,7 @@ fieldset{
     padding: 2%;
     gap: 10%;
 } 
-.contacto-div img{
+.contacto-div svg{
     width: 15px;
     height: 15px;
 }
@@ -647,7 +654,6 @@ fieldset{
         font-size: 20px;
     }
 /* INFO*/
-
 .info-div{
     padding: 0%;
     margin: 4%;    
@@ -751,9 +757,101 @@ fieldset{
         text-align: end;
         
     }   */
-    .contacto-div img{
+    .contacto-div svg{
         width: 25px;
         height: 25px;
     }
     
+
+    /* NOSOTROS*/
+    .info-nosotros{
+        margin-bottom: 8%;
+    }
+    .info-div1{
+        position: absolute;
+        left: 800px;
+        top: 60px;
+        width: 365px;
+        height: 398px;
+        background-color:#E6E3CC;
+    }
+    .info-h2{
+        left: 20px;
+        top: 200px;
+        width: 598px;
+        padding-top: 10%;
+        color: #CB997E;
+        font-size: 1.5rem;
+    }
+    .info-p{
+        position: absolute;
+        left: 0px;
+        top: 150px;
+        width: 600px;
+        height: 63px; 
+        font-size: 1.1rem;
+        margin-top: 3%;
+        line-height: 2rem;
+    }
+    .info-div2{
+        position: absolute;
+        left: 660px;
+        top: 100px;
+        width: 450px;
+        height: 450px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../images/mesa.png);
+    }
+    /* CONTACTO*/
+    .contact{
+        height: 30vh;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 5%;
+    }
+    
+    .contact h2{
+        color: #6B705C;
+        font-size: 2.5rem;
+    }
+    .contact-button{
+        font-size: 1.8rem;
+        height: 12%;
+        padding: 1% 1%;
+    }
+    /*FORM */
+.heroe-form{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/fondo4.jpg);
+}
+
+.h2-form{
+    font-size: 40px;
+    color: white;
+    margin: 2% 2%;
+    background-color: #F5F2DA;
+    width: 400px;
+    align-self: center;
+    text-align: center;
+}
+.form-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+    margin: 4%;
+}
+.h2-form-info{
+    padding-bottom: 3%;
+    color: #CB997E;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
 }
