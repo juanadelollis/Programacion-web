@@ -11,28 +11,8 @@
 
 /**Header **/
 .nav-bar{
-    display: none;
-}
-
-/* .menu-hamburguesa{
-    display: flex;
-    height: 100%;
-    align-items: center;
-    padding: 0 15px;
-    cursor: pointer;
-}
-.ul-nav{
-    position: fixed;
-    max-width: 400px;
-    width: 100%;
-    top: 96px;
-    right: 0;
-    bottom: 0;
-    background-color: #6B705C;
-    overflow-y: auto;
-    display: grid;
-    grid-auto-rows: max-content;
-} */
+    display: block; 
+} 
 
 .principal-header{
     padding: 3%;
@@ -63,7 +43,37 @@
     justify-content: center;
     margin-right: 5%;
 }
+.ul-nav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top: 20vh;
+    background-color:#E6E3CC;
+    /* width: 120vw; */
+    width: 100%;
+    left: 0vw;
+    font-size: 1.3rem;
+    list-style: none; 
+    transform: translateX(-0vw);
+    /* transition: transform 0.5s ease-in-out; */
+    animation-duration: 0.5s;
+}
+.ul-nav li{
+    border-bottom: #6B705C solid 2px;
+    padding: 5% 0;
+    padding-left: 4%;
+    color: #6B705C;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: #6B705C;
+}
 
+.nav-bar a:hover{
+    background: white;
+    cursor: pointer;
+}
 
 /**MAIN SECTION **/
 .heroe{
@@ -587,25 +597,23 @@ fieldset{
         display: flex;
         flex-direction: row;
         width: 100%;
+        transform: none;
+        transition: none;
     }
 
-    .ul-search{
-        display: flex;
+    .ul-nav{     
         flex-direction: row;
-        padding-left: 70%; 
-    }
-
-    .ul-nav{
-        display: flex;
-        flex-direction: row;
-        list-style: none;
         align-items: center;
         justify-content: space-around;
-        width: 80%;  /* PONERLO EN 100 SI NO AGREGO BUSCADOR */
+        background-color: transparent;
+        width: 100%;  
+        position: inherit;
     }  
 
     .ul-nav li{
         font-size: 1.5rem;
+        border-bottom: none;
+        padding: 0%;
     }
 
     .menu-icon{
