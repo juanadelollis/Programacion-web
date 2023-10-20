@@ -11,7 +11,7 @@
 
 /**Header **/
 .nav-bar{
-    display: block; 
+    display: inline-block; 
 } 
 
 .principal-header{
@@ -55,9 +55,8 @@
     left: 0vw;
     font-size: 1.3rem;
     list-style: none; 
-    transform: translateX(-0vw);
-    /* transition: transform 0.5s ease-in-out; */
-    animation-duration: 0.5s;
+    /* transform: translateX(-0vw); 
+    animation-duration: 0.5s;  */
 }
 .ul-nav li{
     border-bottom: #6B705C solid 2px;
@@ -71,7 +70,7 @@
 }
 
 .nav-bar a:hover{
-    background: white;
+    color: white;
     cursor: pointer;
 }
 
@@ -97,7 +96,6 @@
 }
 
 .event-button{
-    /* background-color: #B7B7A4; */
     color: white;
     padding: 3% 4%;
     margin: 5%;
@@ -112,7 +110,6 @@
     font-size: 40px;
     color: white;
     margin: 2% 2%;
-    /* background-color: #B7B7A4; */
     text-align: center;
 }
 
@@ -134,7 +131,7 @@
     width: 80%;
 }
 
-/*NOSOTROS */
+/*NOSOTROS HTML*/
 .heroe-nosotros{
     background-position: center center;
     background-repeat: no-repeat;
@@ -148,8 +145,8 @@
     margin: 2% 2%;
     background-color: #F5F2DA;
     width: 400px;
-    align-self: center;
-    text-align: center;
+    align-self: center; 
+    text-align: center; 
 }
 .info-nosotros{
     position: relative;
@@ -174,7 +171,7 @@
     line-height: 2rem;
 }
 
-/*EVENTOS*/
+/*EVENTOS HTML*/
 .heroe-eventos{
     background-position: center center;
     background-repeat: no-repeat;
@@ -224,7 +221,7 @@
 .contact-button:hover{
     color:#CB997E;
 }
-/*FORM */
+/*FORM HTML*/
 .heroe-form{
     background-position: center center;
     background-repeat: no-repeat;
@@ -263,7 +260,7 @@
     line-height: 1.8rem;
     font-size: 1.2rem;
 }
-/* LOGIN MI CUENTA*/
+/* LOGIN MI CUENTA HTML*/
 .form-login{
     background-color: white;
     display: flex;
@@ -311,6 +308,8 @@
         scale: 1.1;
         cursor: pointer;
     }
+
+
 /* RESTO DE LA PAGINA*/
 /* Info*/
 .info-div{
@@ -817,7 +816,7 @@ fieldset{
         height: 30vh;
         flex-direction: row;
         justify-content: space-around;
-        margin-bottom: 5%;
+        margin-bottom: 8%; /* VER SI QUEDA MEJOR SIN ESO*/
     }
     
     .contact h2{
