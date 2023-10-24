@@ -4,7 +4,7 @@ let app = Vue.createApp({
             showMenuButton: true,
             //showNav: true,
             showNav: window.innerWidth > 769 ? true: false,
-            //showMenuButton: window.innerWidth > 769 ? false: true,
+            showMenuButton: window.innerWidth > 769 ? false: true,
             showCloseButton: false,
          }
      },

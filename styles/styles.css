@@ -709,7 +709,8 @@ fieldset{
         /* padding: 3%; */
         flex-direction: row;
         color:#6B705C;
-        gap: 5%;  
+        align-items: center;
+        justify-content: center;  
     
     }
 
@@ -718,10 +719,6 @@ fieldset{
         width: 50%;
     }
 
-    .main-form{
-        align-items: center;
-        justify-content: center;
-    }
 
     .h1-contact{
         font-size: 3.5rem;
