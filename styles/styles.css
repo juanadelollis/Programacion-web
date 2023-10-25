@@ -228,7 +228,13 @@
     background-size: cover;
     background-image: url(../images/fondo4.jpg);
 }
-
+.form-section2{
+    background-color: #6B705C;
+    padding: 0% 20%;
+}
+.form-container{
+    background-color: #E6E3CC;
+}
 .h2-form{
     font-size: 40px;
     color: white;
@@ -346,11 +352,8 @@ hr {
 /** cards **/
 
 .events-div{
-    /* background-color: #F5E1DA; */
-    background-color: #F5F2DA; 
-    /* background-color: #F3F5E2; */
-    padding-bottom: 20%;
-    padding-top: 5%;
+    background-color: #F5F2DA;
+    padding: 8% 0%;    
 }
 .cards-div{
     display: flex;
@@ -379,8 +382,8 @@ hr {
 
 .card{
     width: 80%;
-    height: 250px;
-    padding: 10%;
+    height: auto;
+    padding: 5% 10%;
 
 }
 
@@ -408,33 +411,17 @@ hr {
 }
 .card-1{
     background-image: url(../images/card-bodas.jpg);
-    /* background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 350px; */
     
 }
 
 .card-2{
     background-image: url(../images/card-bapcom.jpg);
-    /* background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 350px; */
 }
 .card-3{
     background-image: url(../images/card-15.png);
-    /* background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 350px; */
 }
 .card-4{
     background-image: url(../images/card-cumple.jpg);
-    /* background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 350px; */
 }
     
 
@@ -443,10 +430,6 @@ hr {
     display: flex;
     flex-direction: column;
     background-color:white;
-    /* box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1); */
-    border-radius: 0.5rem;
-    /* padding: 2rem; */
-    /* margin: 1rem 1rem; */
 }
 .form-img{
     background-image: url(../images/mesa3.png);
@@ -490,6 +473,7 @@ fieldset{
 .contact-form {
     max-width: 500px;
     margin: 0 auto;
+    padding-bottom: 5%;
 }
 
 .form-group {
@@ -526,8 +510,6 @@ fieldset{
 }
 .send-btn{
     align-items: center;
-    /* background-color: #B7B7A4;  */
-    /* background-color: #E6E3CC; */
     background-color: white;
     color: #6B705C;
     font-size: 20px;
@@ -676,7 +658,9 @@ fieldset{
 }
 
 /* Cards */
-
+    .events-div{
+        padding-top: 3%;    
+    }
     .h2-events{
         display: flex;
         flex-direction: column;
@@ -706,12 +690,13 @@ fieldset{
     
     /**forms **/
     .form-section{
-        /* padding: 3%; */
         flex-direction: row;
-        color:#6B705C;
+        color:#6B705C; 
+        gap: 5%;
+        
+        /* Si pongo esto no se ve la imagen, por eso uso gap
         align-items: center;
-        justify-content: center;  
-    
+        justify-content: center; */
     }
 
     .form-img{
@@ -719,7 +704,15 @@ fieldset{
         width: 50%;
     }
 
-
+    .form-info{
+        padding-bottom: 4%;
+    }
+    .main-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+ 
     .h1-contact{
         font-size: 3.5rem;
     }
@@ -734,6 +727,7 @@ fieldset{
     .contact-form label {
         font-size: 1.2rem;
     }
+
     
 
 /** FOOTER**/
@@ -831,6 +825,15 @@ fieldset{
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../images/fondo4.jpg);
+}
+.form-section2{
+    flex-direction: row;
+    color:#6B705C; 
+    align-items: center;
+    justify-content: center;
+}
+.main-form2{
+    background-color: #E6E3CC;
 }
 
 .h2-form{

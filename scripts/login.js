@@ -1,7 +1,7 @@
 let userApp = Vue.createApp({
     data: function(){
         return {
-            nameApp: 'Registrarse',
+            nameApp: 'Iniciar sesión',
             usuarioIngresado:{
                 usuario: "",
                 contrasena: ""
